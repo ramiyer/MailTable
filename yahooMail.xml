@@ -18,10 +18,11 @@
         <key id="resetMessageUnseen" type='xs:string' paramType='variable' default='false' />
         <key id="fid" type='xs:string' paramType='variable' default='Inbox' />
         <key id="mid" type='xs:string' paramType='variable' />
-        
+        <key id="pid" type='xs:string' paramType='variable' />
+        <key id="search" type='xs:string' paramType='variable' />
       </inputs>
       <execute><![CDATA[
-       var ymwsMethod = inputs['method'];
+       	var ymwsMethod = inputs['method'];
         y.log("method = " + ymwsMethod);
 
         var content = '';
