@@ -20,6 +20,8 @@
         <key id="mid" type='xs:string' paramType='variable' />
         <key id="pid" type='xs:string' paramType='variable' />
         <key id="search" type='xs:string' paramType='variable' />
+        <key id="sortKey" type='xs:string' paramType='variable' default='date' />
+        <key id="sortOrder" type='xs:string' paramType='variable' default='up' />
       </inputs>
       <execute><![CDATA[
        	var ymwsMethod = inputs['method'];
@@ -27,9 +29,7 @@
 
         var content = '';
         var params = '[{}]';
-
 		var fid = escape(inputs["fid"]);
-
         // get parameters for the given cascade method
         switch (ymwsMethod) {
             case "ListMessages":
@@ -60,7 +60,6 @@
                 	 '    "sortOrder"         : "' + inputs[sortOrder] + '",' +
                 	 '    "startMid"      : ' + inputs['startMid'] + ',' +
                 	 '    "startInfo"     : ' + inputs['startInfo'] + ',' +
-                	 '    "numMid"        : ' + inputs['numMid'] + ',' +
                 	 '    "search"        : ' + inputs['search'] + ',' +
                 	 '    "numMid"        : ' + inputs['numMid'] + ',' +
                 	 '    "numInfo"       : ' + inputs['numInfo'] + 
