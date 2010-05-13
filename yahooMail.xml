@@ -55,17 +55,21 @@
             case "GetUserData":
             	break;
             case "SearchMessages":
-            	params = '[{' +
-                	 '    "sortKey"           : "' + inputs[sortKey] + '",' +
-                	 '    "sortOrder"         : "' + inputs[sortOrder] + '",' +
-                	 '    "startMid"      : ' + inputs['startMid'] + ',' +
-                	 '    "startInfo"     : ' + inputs['startInfo'] + ',' +
-                	 '    "search"        : ' + inputs['search'] + ',' +
-                	 '    "numMid"        : ' + inputs['numMid'] + ',' +
-                	 '    "numInfo"       : ' + inputs['numInfo'] + 
-                	 '}]';
-            	break;
-            case "GetMessageRawHeader":
+                params = '[{' +
+                         '    "sortKey"       : "' + inputs[sortKey] + '",' +
+                         '    "sortOrder"     : "' + inputs[sortOrder] + '",' +
+                         '    "startMid"      : ' + inputs['startMid'] + ',' +
+                         '    "startInfo"     : ' + inputs['startInfo'] + ',' +
+                         '    "numMid"        : ' + inputs['numMid'] + ',' +
+                         '    "search" : '[{' +
+                                                '"fid" : "' + inputs['fid'] + '",' +
+                                                '"query" : ' + inputs['query'] +
+                                        '}]' +
+                         '    "numMid"        : ' + inputs['numMid'] + ',' +
+                         '    "numInfo"       : ' + inputs['numInfo'] + 
+                         '}]';
+                break; 
+	    case "GetMessageRawHeader":
             	params = '[{' +
                 	 '    "fid" : "' + fid + '",' +
                 	 '    "mid" : "' + mid + '",' +
