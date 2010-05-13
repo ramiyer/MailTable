@@ -57,8 +57,7 @@
             	break;
             case "SearchMessages":
                 params = '[{' +
-                         '    "sortKey"       : "' + inputs['sortKey'] + '",' +
-                         '    "sortOrder"     : "' + inputs['sortOrder'] + '",' +
+                         '    "numInfo"       : ' + inputs['numInfo'] + ',' +
                          '    "startMid"      : ' + inputs['startMid'] + ',' +
                          '    "startInfo"     : ' + inputs['startInfo'] + ',' +
                          '    "numMid"        : ' + inputs['numMid'] + ',' +
@@ -66,7 +65,8 @@
                      				'    "fid"           : "' + inputs['fid'] + '",' +
 				 		'    "query"	     : "' + inputs['query'] + '" '  
 					'}]' + ',' + 
-                         '    "numInfo"       : ' + inputs['numInfo'] + 
+                         '    "sortKey"       : "' + inputs['sortKey'] + '",' +
+                         '    "sortOrder"     : "' + inputs['sortOrder'] + '"' 
                          '}]';
                 break; 
 	    case "GetMessageRawHeader":
