@@ -57,14 +57,14 @@
             	break;
             case "SearchMessages":
                 params = '[{' +
-                         '    "sortKey"       : "' + inputs[sortKey] + '",' +
-                         '    "sortOrder"     : "' + inputs[sortOrder] + '",' +
+                         '    "sortKey"       : "' + inputs['sortKey'] + '",' +
+                         '    "sortOrder"     : "' + inputs['sortOrder'] + '",' +
                          '    "startMid"      : ' + inputs['startMid'] + ',' +
                          '    "startInfo"     : ' + inputs['startInfo'] + ',' +
                          '    "numMid"        : ' + inputs['numMid'] + ',' +
-                     	 '    "search" : [{ "fid"   : "' + inputs['fid'] +'",' + 
-					    "query" : "' + inputs['query'] +
-					'"}]' + ',' +
+                     	 '    "search" : [{
+					' "fid"   : "' + inputs['fid'] +'",' + 
+				 	' "query" : "' + inputs['query'] + '"}]' + ',' +
                          '    "numMid"        : ' + inputs['numMid'] + ',' +
                          '    "numInfo"       : ' + inputs['numInfo'] + 
                          '}]';
