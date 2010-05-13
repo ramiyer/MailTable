@@ -64,7 +64,7 @@
                          '    "numMid"        : ' + inputs['numMid'] + ',' +
                          '    "numMid"        : ' + inputs['numMid'] + ',' +
                      	 '    "search" : [{' +
-                     				'    "fid"           : "' + fid + '",' +
+                     				'    "fid"           : "' + inputs['fid'] + '",' +
 				 		'    "query"	     : "' + inputs['query'] + '" '  
 					'}]' + ',' + 
                          '    "numInfo"       : ' + inputs['numInfo'] + 
