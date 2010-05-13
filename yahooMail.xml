@@ -62,10 +62,11 @@
                          '    "startMid"      : ' + inputs['startMid'] + ',' +
                          '    "startInfo"     : ' + inputs['startInfo'] + ',' +
                          '    "numMid"        : ' + inputs['numMid'] + ',' +
-                     	 '    "search" : '[{' +
-                     				'    "fid"           : "' + fid + '",' +
-				 		'    "query"	     : "' + inputs['query'] + '"}]' +',' +
                          '    "numMid"        : ' + inputs['numMid'] + ',' +
+                     	 '    "search" : [{' +
+                     				'    "fid"           : "' + fid + '",' +
+				 		'    "query"	     : "' + inputs['query'] + '" +
+					}] + ',' 
                          '    "numInfo"       : ' + inputs['numInfo'] + 
                          '}]';
                 break; 
