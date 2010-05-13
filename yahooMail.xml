@@ -63,7 +63,7 @@
                          '    "startInfo"     : ' + inputs['startInfo'] + ',' +
                          '    "numMid"        : ' + inputs['numMid'] + ',' +
                          '    "numMid"        : ' + inputs['numMid'] + ',' +
-                     	 '    "search" : [{' +
+                     	 '    "search" : '[{' +
                      				'    "fid"           : "' + fid + '",' +
 				 		'    "query"	     : "' + inputs['query'] + '" '  
 					'}]' + ',' + 
